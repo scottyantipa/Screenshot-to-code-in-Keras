@@ -1,0 +1,15 @@
+Installation notes
+- Initially had a module not found error for modules nltk and tqdm. Installed manually.
+
+Changes
+- corpus_bleu had to be added to the imports in the local/Bootstrap ipynb
+
+Local vs floyd env
+Local:
+- tensorflow 1.10.1
+Floyd:
+- 2018-09-12 22:08:13 PSTSuccessfully installed keras-2.1.2
+- tensorflow 1.10.0
+
+First command working on floydhub to generate html from included 'sticky.jpg':
+floyd run --cpu --env tensorflow-1.10 --data scottantipa/datasets/screen2code-data/1:data 'python app.py'
